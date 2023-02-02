@@ -1,4 +1,4 @@
-package test_cases;
+package qrCode;
 
 import com.google.zxing.BinaryBitmap;
 import com.google.zxing.LuminanceSource;

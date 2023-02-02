@@ -1,4 +1,4 @@
-package test_cases;
+package qrCode;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
