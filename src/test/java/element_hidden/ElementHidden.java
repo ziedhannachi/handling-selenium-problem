@@ -20,7 +20,7 @@ public class ElementHidden {
 	static void setup() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		driver.get("https://learn.letskodeit.com/p/practice");
+		driver.get("https://courses.letskodeit.com/practice");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
@@ -36,6 +36,8 @@ public class ElementHidden {
 		// identify element and set value
 		j.executeScript("document.getElementById('displayed-text').value='Selenium';");
 		String s = (String) j.executeScript("return document.getElementById('displayed-text').value");
+
+		driver.findElement(By.id("show-textbox")).click();
 		System.out.print("Value entered in hidden field: " + s);
 	}
 
